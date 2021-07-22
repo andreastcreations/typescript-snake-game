@@ -11,12 +11,12 @@ let gameOver = false;
 function gameLoop(currentTime) {
     if (gameOver) {
         if (confirm("You lost! Your score is: " + getScore() + " points.\nPress ok to restart.")) {
-            window.location.href = "https://andreastmedia.github.io/snake-game/";
+            window.location.href = "https://snake-ts-game.herokuapp.com/";
         }
         return;
     }
     if (reset()) {
-        window.location.href = "https://andreastmedia.github.io/snake-game/";
+        window.location.href = "https://snake-ts-game.herokuapp.com/";
         return;
     }
     window.requestAnimationFrame(gameLoop);
