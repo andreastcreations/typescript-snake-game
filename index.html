@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/game.js" defer type="module"></script>
+</head>
+<body>
+    <div class="container"> 
+        <div class="visual">
+            <div id="game-board"></div>
+        </div>
+        <div class="menu">
+            <div class="score-container">
+                <label>Score:</label>
+                <input id="score" type="number" value="0" readonly>
+            </div>
+            <div class="inputs">
+                <label>Snake Speed:</label>
+                <input id="snake-speed" type="number" value="1">
+                <br>
+                <br>
+                <label>Snake Expansion:</label>
+                <input id="snake-expansion" type="number" value="1">
+                <br>
+                <p>Values between 1-10</p>
+            </div>
+            <div class="controls">
+                <img src="./images/wasd.png">
+                <p>Use WASD keys.</p>
+            </div>
+            <div class="button-container">
+                <button id="reset">Reset</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
